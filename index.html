@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luhn algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <form>
+        <input placeholder="Kartınızın 16 rəqəmini daxil edin.." type="number" name="cardNumber" onKeyPress="if(this.value.length==16) return false;" id="cardNumber">
+        <input id="check" type="submit" value="Yoxla">
+    </form>
+    <div class="content">
+        <ul>
+            <li id="user-card-number">Kartınızın rəqəmləri: </li>
+            <li id="even-index">Cüt indekslərin cəmi: </li>
+            <li id="odd-index">Tək indekslərin 2 mislinin cəmi: </li>
+            <li id="total-sum">Yuxarıdakıların cəmi: </li>
+            <li id="result">Nəticə: </li>
+        </ul>
+    </div>    
+    
+    <script src="main.js"></script>
+</body>
+</html>
